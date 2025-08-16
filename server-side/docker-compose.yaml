@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:14.4
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=techstore
+      - POSTGRES_PASSWORD=jQTRYfcTedf3ihQTX21vv
+      - POSTGRES_DB=techstore
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
